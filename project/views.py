@@ -3,14 +3,16 @@
 # @File: views.py
 # @Author: eswizardry
 # @Date:   2016-09-21 11:30:50
-# @Last Modified by:   eswizardry
-# @Last Modified time: 2016-09-22 17:25:43
+# @Last Modified by:   Bancha Rajainthong
+# @Last Modified time: 2016-09-22 21:44:20
 
 import sqlite3
 from functools import wraps
 
 from flask import Flask, flash, redirect, render_template, \
     request, session, url_for, g
+
+from forms import AddTaskForm
 
 # config
 app = Flask(__name__)
